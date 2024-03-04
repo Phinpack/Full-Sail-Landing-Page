@@ -11,6 +11,9 @@
          <div class="header-image-container">
             <img class="header-image" src="/images/Logo.png"></img>
         </div>
+        <div class="info-box">
+            <span class="info-icon" onclick="scrollToSection('.form')"><img style="padding-top: 10px;" src="/images/Info.png" ></span>
+         </div>
       </header>
       <div class="headline-container">
         <img class="background-image" src="/images/Header Image.png">
@@ -25,6 +28,7 @@
             <h4>Fill out the form for more information or call us at <span style="
                 text-decoration: underline;
                 letter-spacing: 0px;
+                cursor: pointer;
                 color: #CC4B00;">844.716.1492</span>.</h4>
         </div>
             <hr class="form-hr">
@@ -78,12 +82,24 @@
         <img class="footer-title" src="/images/footertitle.png">
         <hr class="footer-hr">
         <div class="footer-text-container">
-            <h4>For more information about Full Sail's programs, courses, and studios, as well as details about financial aid and career development, please visit our website at www.fullsail.edu</h4> 
+            <h4>For more information about Full Sail's programs, courses, and studios, as well as details about financial aid and career development, please visit our website at <span style="text-decoration: none; cursor: pointer;"><a href="https://www.fullsail.edu" target="_blank" style="color: inherit;">www.fullsail.edu</a></span></h4> 
             <h4>3300 University Blvd - Winter Park, FL 32792 - Financial aid available for those who qualify - Career development assistance · Accredited University, ACCSC</h4>
             <h4>Other product and company names mentioned herein may be the trademarks of their respective owners.</h4>
             <h4>The appearance of these marks does not necessarily indicate a formalized sponsorship or affiliation with other such companies.</h4>
             <h4>The terms “Full Sail,” “Full Sail University,” and the Full Sail logo are either registered service marks or services marks of Full Sail, LLC.</h4>
         </div>
+        <hr class="under-footer-hr">
+        <div class="under-footer">
+            <h4>© 2024 Full Sail, LLC. All rights reserved.</h4>
+        </div>
       </footer>
+      <script>
+        function scrollToSection(className) {
+            var sections = document.getElementsByClassName(className);
+            if (sections.length > 0) {
+                sections[0].scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
    </body>
 </html>

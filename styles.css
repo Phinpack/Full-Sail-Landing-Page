@@ -9,9 +9,10 @@ body {
    left: 375px;
    width: 213px;
    height: 26px;
-   /* UI Properties */
-   background: transparent url("img/Logo - Full Color - Mobile.png") 0% 0%
-      no-repeat padding-box;
+}
+
+.info-box {
+   display: none;
 }
 
 .headline-container {
@@ -41,17 +42,14 @@ body {
    font: normal normal normal 40px/55px Open Sans;
    letter-spacing: 0px;
    color: #ffffff;
-
    margin: 0;
 }
 
 .headline-text h2 {
-   color: var(---fdb913);
    text-align: left;
    font: normal normal bold 18px/24px Open Sans;
    letter-spacing: 0px;
    color: #fdb913;
-
    margin: 0;
 }
 
@@ -61,7 +59,6 @@ body {
    left: 1165px;
    width: 380px;
    height: 575px;
-   background: var(---ffffff) 0% 0% no-repeat padding-box;
    background: #ffffff 0% 0% no-repeat padding-box;
    box-shadow: 0px 3px 6px #00000029;
 }
@@ -136,12 +133,17 @@ select {
    top: 0;
    width: 20px;
    height: 20px;
-   border-radius: 20%; /* Curved edges */
-   border: 2px solid #505050; /* Border */
+   border-radius: 20%;
+   border: 2px solid #505050;
 }
 
 .checkbox-container input:checked + label:before {
-   background-color: #cc4b00;
+   text-align: center;
+   content: "\2713";
+   color: rgb(255, 255, 255);
+   line-height: 18px;
+   font-size: 18px;
+   background-color: yellow;
 }
 
 .submit-btn {
@@ -184,8 +186,6 @@ select {
    margin: 0px 0px 0px 10px;
    width: 712px;
    height: 22px;
-   /* UI Properties */
-   color: var(---cc4b00);
    text-align: left;
    text-decoration: underline;
    font: normal normal normal 16px/26px Open Sans;
@@ -206,8 +206,6 @@ select {
    left: 415px;
    width: 712px;
    height: 22px;
-   /* UI Properties */
-   color: var(---cc4b00);
    text-align: left;
    text-decoration: underline;
    font: normal normal normal 16px/26px Open Sans;
@@ -222,7 +220,6 @@ select {
    width: 100%;
    height: 398px;
    /* UI Properties */
-   background: var(---505050) 0% 0% no-repeat padding-box;
    background: #505050 0% 0% no-repeat padding-box;
 }
 
@@ -268,4 +265,114 @@ select {
 }
 .footer-text-container h4 {
    font-weight: 300;
+}
+
+.under-footer-hr {
+   position: relative;
+   top: 160px;
+   border: none;
+   border-top: 1px solid #747474;
+}
+
+.under-footer {
+   color: #d6d6d6;
+   font-size: 12px;
+   width: 100%;
+   background-color: #454545;
+   position: absolute;
+   top: 397;
+   border-top: #ffffff;
+}
+
+.under-footer h4 {
+   text-align: center;
+   font-weight: 100;
+}
+
+@media only screen and (max-width: 450px) {
+   .header-image {
+      top: 10px;
+      left: 15px;
+   }
+   .info-box {
+      position: relative;
+      display: block;
+      left: 340px;
+      width: 50px;
+      height: 50px;
+      background-color: #fdb913;
+      text-align: center;
+      font-size: 24px;
+   }
+   .background-image {
+      width: 390px;
+      height: 220px;
+   }
+   .headline-text {
+      top: 186px;
+      left: 0px;
+      width: 390px;
+      height: 79px;
+      background-color: rgb(0, 0, 0, 0.6);
+   }
+   .headline-text h1 {
+      text-align: center;
+      font-size: 24px;
+   }
+   .headline-text h2 {
+      text-align: center;
+      font-size: 14px;
+   }
+   .text-container {
+      top: 308px;
+      left: 15px;
+      width: 360px;
+      height: 305px;
+   }
+   .footer-container {
+      top: 1748px;
+      left: 0px;
+      width: 390px;
+      height: 604px;
+   }
+   .white-logo {
+      top: 40px;
+      left: 88px;
+      width: 214px;
+      height: 24px;
+   }
+   .footer-hr {
+      position: relative;
+      width: 350px;
+      border: none;
+      border-top: 1px solid #686868;
+   }
+   .footer-title {
+      left: 20px;
+      width: 90%;
+      height: auto;
+   }
+   .form-container {
+      top: 1080px;
+      left: 0px;
+      width: 380px;
+      height: 575px;
+      background: var(---ffffff) 0% 0% no-repeat padding-box;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000029;
+   }
+   .footer-text-container {
+      top: 150px;
+      left: 20px;
+      width: 350px;
+      height: 17px;
+   }
+   .under-footer-hr {
+      top: 473px;
+      border: none;
+      border-top: 1px solid #747474;
+   }
+   .under-footer {
+      top: 560;
+   }
 }
